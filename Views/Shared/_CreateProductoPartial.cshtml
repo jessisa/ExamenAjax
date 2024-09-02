@@ -1,0 +1,48 @@
+﻿﻿<div>
+    <form id="createProductoForm">
+        <div class="form-group">
+            <label for="firstName">Nombre:</label>
+            <input type="text" id="name" name="name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="precio">Precio:</label>
+            <input type="text" id="precio" name="precio" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="fecha">Fecha de Vencimiento:</label>
+            <input type="text" id="fecha" name="fecha" class="form-control" />
+        </div>
+        <button type="button" id="submitProductoButton" class="btn btn-success">Guardar</button>
+    </form>
+</div>
+
+@* <script>
+    $(document).ready(function () {
+
+        $('#submitCourseButton').click(function () {
+            var name = $('#name').val();
+            var description = $('#description').val();
+            var credit = $('#credit').val();
+
+
+            $.ajax({
+                type: "POST",
+                url: "/CoursesAjax/SubmitForm",
+                data: {
+                    name: name,
+                    description: description,
+                    credit: credit
+                },
+                success: function (response) {
+                    // alert(response);
+                    console.log(response);
+                    $('#createCourseModal').modal('hide');
+                    location.reload(); // Recargar la página para ver la lista actualizada
+                },
+                error: function () {
+                    alert('Hubo un error al crear el estudiante.');
+                }
+            });
+        });
+    });
+</script> *@
